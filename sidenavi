@@ -1,0 +1,82 @@
+<div id="sideNavi" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br><br>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="bio.html">Bio</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<div class="menu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+
+
+<script type="text/javascript">
+function openNav() {
+    document.getElementById("sideNavi").style.width = "200px";
+}
+
+function closeNav() {
+    document.getElementById("sideNavi").style.width = "0";
+}
+</script>
+
+
+
+/* CSS */
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 25px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+	text-align:right;
+}
+
+.sidenav a:hover {
+    color: #e51937;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    font-size: 25px;
+    margin-left: 130px;
+}
+
+.menu {
+	display:inline-block;
+	position:absolute;
+	top: 15px;
+	right: 0px;
+	padding-right: 15px;
+}
+
+	
+@media only screen and (max-width: 768px) {
+
+
+.sidenav {
+	padding-top: 15px;
+	font-size: 12px;
+	font-family: 'helvetica';
+
+}
+.sidenav a {font-size: 18px;}
+  
+}
